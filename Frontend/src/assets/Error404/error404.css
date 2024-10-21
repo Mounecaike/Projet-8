@@ -1,0 +1,29 @@
+.Error-page h1 {
+    font-family: 'Montserrat';
+    font-size: 263px;
+    text-align: center;
+    color: #FF6060;
+    margin: 50px 0px 50px 0px;
+}
+
+.Error-page p {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    text-align: center;
+    color: #FF6060;
+    margin: 50px 0px 50px 0px;
+
+}
+
+.Error-page a {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px 60px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.Error-page a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
