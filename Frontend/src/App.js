@@ -1,19 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+// Pages //
 import Home from './pages/Home';
+import Error from './pages/Error404';
 import FicheLogement from './pages/Logement';
-import Error404 from './pages/Error404';
 import About from './pages/About';
+
+// Composant //
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/logement/:id" element={<FicheLogement />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error404 />} />
+        <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

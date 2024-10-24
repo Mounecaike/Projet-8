@@ -1,0 +1,26 @@
+.location-tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start; 
+    max-width: 600px; 
+    
+}
+  
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6060;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.96px;
+    text-align: center;
+    color: white;
+}
