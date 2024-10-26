@@ -1,0 +1,46 @@
+.collapse-container {
+    width: 582px;
+  }
+.collapse-container.about {
+    width: 1023px;
+}
+ 
+  .collapse-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;
+    padding: 10px;
+    background-color: #FF6060;
+    border-radius: 10px;
+  }
+  
+  .collapse-title {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+  }
+  
+  .collapse-arrow {
+    margin-right: 10px;
+    cursor: pointer;
+    height: 20px;
+    transition: transform 0.6s ease;
+  }
+  
+  .collapse-arrow.rotate {
+    transform: rotate(-180deg);
+  }
+  
+  .collapse-content {
+    background-color: #F6F6F673;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+.collapse-content p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    text-align: left;
+}

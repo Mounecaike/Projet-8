@@ -3,9 +3,9 @@ import Banner from '../components/banner'
 import Homebanner from '../Assets/Banner/paysage-home.jpeg'
 import '../Assets/Home/home.css'
 import Card from '../components/card'
+
 function Home() {
   return (
-    <div>
       <main>
           <div className='banner-with-text'>
             <Banner imageSrc={Homebanner} altText={"photo de paysage"} />
@@ -15,7 +15,6 @@ function Home() {
         <Card />
       </section>
       </main>
-    </div>
   );
 }
 

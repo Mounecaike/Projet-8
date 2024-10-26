@@ -5,6 +5,7 @@ footer {
     background-color: #000;
     height: 209px;
     width: 100%;
+    position: relative;
 }
 
 footer img {

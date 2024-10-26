@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // Pages //
 import Home from './pages/Home';
 import Error from './pages/Error404';
-import FicheLogement from './pages/Logement';
+import Location from './pages/location';
 import About from './pages/About';
 
 // Composant //
@@ -18,7 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/logement/:id" element={<FicheLogement />} />
+        <Route path="/logement/:id" element={<Location />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>

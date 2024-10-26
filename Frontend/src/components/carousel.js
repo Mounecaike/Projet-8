@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react';
 import '../Assets/carousel/carousel.css';
-import LeftArrow from '../Assets/carousel/arrowleft.png';
-import RightArrow from '../Assets/carousel/arrowright.png';
+import Leftarrow from '../Assets/carousel/arrowleft.png';
+import Rightarrow from '../Assets/carousel/arrowright.png';
 
 const Carousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -21,21 +21,34 @@ const Carousel = ({ images }) => {
     );
   };
 
+  const Singlepicture = images.length === 1;
+
   return (
     <div className="carousel">
-      <button className="carousel-button prev" onClick={handlePrevious}>
-        <img src={LeftArrow} alt="Flèche gauche" className="arrow-image" />
-      </button>
-      <img
+        {!Singlepicture && (
+        <button className="carousel-button prev" onClick={handlePrevious}>
+          <img src={Leftarrow} alt="Précédent" />
+        </button>
+        )}
+        <img
         src={images[currentImageIndex]}
         alt={`Image ${currentImageIndex + 1}`}
         className="carousel-image"
-      />
-      <button className="carousel-button next" onClick={handleNext}>
-        <img src={RightArrow} alt="Flèche droite" className="arrow-image" />
-      </button>
+        />
+        {!Singlepicture && (
+        <button className="carousel-button next" onClick={handleNext}>
+          <img src={Rightarrow} alt="Suivant" />
+        </button>
+        )}
+        {!Singlepicture && (
+        <div className="image-counter">
+        {currentImageIndex + 1} / {images.length}
+        </div>
+        )}
     </div>
   );
 };
 
 export default Carousel;
+
+
