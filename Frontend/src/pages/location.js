@@ -48,19 +48,25 @@ const Location = () => {
     <main>
       <Carousel images={locationData.pictures} />
       <section className="location-details">
-          <h1 className="location-title">{locationData.title}</h1>
-          <p className="location-location">{locationData.location}</p>
-          <div className='host-rating'>
+        <div className='info-location-container'>
+          <div className='tag-info-container'>
+            <div className='title-container'>
+              <h1 className="location-title">{locationData.title}</h1>
+              <p className="location-location">{locationData.location}</p>
+            </div>
+            <Tag tags={locationData.tags} />
+          </div>  
+          <div className='host-container'>
             <div className="location-host">
-              <p className="host-name">
-                {locationData.host.name.split(' ')[0]}<br />
-                {locationData.host.name.split(' ')[1]}
-              </p>
-              <img src={locationData.host.picture} alt={`Photo de ${locationData.host.name}`} />
+            <p className="host-name">
+              {locationData.host.name.split(' ')[0]}<br />
+              {locationData.host.name.split(' ')[1]}
+            </p>
+            <img src={locationData.host.picture} alt={`Photo de ${locationData.host.name}`} />
             </div>
             <StarRating rating={locationData.rating} />
           </div>
-          <Tag tags={locationData.tags} />
+        </div>
         <div className='collapse'>
           <Collapse title="Description" content={locationData.description} />
           <Collapse title="Équipement" content={locationData.equipments} />
