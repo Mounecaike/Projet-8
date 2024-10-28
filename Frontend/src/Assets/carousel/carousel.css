@@ -36,15 +36,15 @@
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 14px;
-  }  
-  .carousel-button {
+}  
+.carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
     cursor: pointer;
-  }
+}
   
   .carousel-button.prev {
     left: 10px;
@@ -59,4 +59,23 @@
     height: 100%;
     object-fit: cover;
   }
+
+@media  (max-width: 375px) {
   
+.carousel {
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+}
+.carousel-button img {
+    height: 20px;
+    width: 12px;
+}
+.arrow-image {
+    height: 20px;
+}
+
+.image-counter {
+    display: none;
+}
+}

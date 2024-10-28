@@ -63,3 +63,48 @@ ul {
     justify-content: space-between;
     margin: 20px 0px 20px 0px;
 }
+
+/* Responsive */
+@media (max-width: 375px){
+.location-details {
+    max-width: 375px;
+}
+.info-location-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.location-title {
+    font-size: 18px;
+    line-height: normal;
+}
+.location-location {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: normal;
+}
+.location-host p {
+    font-size: 12px;
+    line-height: normal;
+
+}
+.location-host img {
+    height: 32px;
+    width: 32px;
+}
+.host-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 335px;
+    align-items: center;
+    justify-content: space-between;
+}
+.collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+
+}

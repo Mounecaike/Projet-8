@@ -4,7 +4,9 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+.break-responsive {
+    display: inline;
+  }
 .gallery {
     background: #F6F6F6;
     height: 829px;
@@ -31,4 +33,32 @@ main {
     line-height: 68.45px;
     text-align: left;
     text-shadow: 0px 4px 4px 0px #00000040;
+}
+
+@media  (max-width: 375px){
+.banner-with-text {
+    width: 100%;
+}  
+
+.gallery {
+    max-width: 375px;
+    margin: 10px 0px 25px 0px;
+    background: inherit;
+}
+.break-responsive{
+    display: block; 
+    margin-top: 0.5rem;
+  }
+.banner-text {
+    left: 10%;
+    position: absolute; 
+    color: white;
+    z-index: 1;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px 0px #00000040;
+}
+
 }

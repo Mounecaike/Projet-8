@@ -24,3 +24,14 @@
     text-align: center;
     color: white;
 }
+
+@media  (max-width: 375px){
+.tag {
+    height: 18px;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+}
