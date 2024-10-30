@@ -3,8 +3,9 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #000;
+    max-width: 1440px;
     height: 209px;
-    width: 100%;
+    width: 1440px;
     position: relative;
 }
 
