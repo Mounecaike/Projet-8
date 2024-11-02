@@ -65,15 +65,14 @@ ul {
 }
 
 /* Responsive */
-@media (max-width: 375px){
+@media  (max-width: 767.98px){
 .location-details {
-    max-width: 375px;
+    max-width: 90%;
 }
 .info-location-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 20px;
 }
 .location-title {
     font-size: 18px;
@@ -96,7 +95,7 @@ ul {
 .host-container {
     display: flex;
     flex-direction: row-reverse;
-    width: 335px;
+    width: 90%;
     align-items: center;
     justify-content: space-between;
 }
@@ -106,5 +105,4 @@ ul {
     align-items: center;
     margin: 5px 0px 5px 0px;
 }
-
 }

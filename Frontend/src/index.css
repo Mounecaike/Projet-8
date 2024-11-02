@@ -32,12 +32,19 @@ code {
 
 /* Responsive */
 
-@media  (max-width: 375px) {
+@media  (max-width: 767.98px){
+
+#root {
+  width: 100%;
+  max-width: 767.98px;
+}
 
 body {
-  max-width: 375px;
+  width: 100%;
+  max-width: 767.98px;
 }
 main{
-  max-width: 375px;
+  width: 100%;
+  max-width: 767.98px;
 }
 }

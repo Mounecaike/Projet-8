@@ -7,7 +7,7 @@
     object-fit: cover;
     opacity: 70%;
 }
-@media  (max-width: 375px){
+@media  (max-width: 767.98px){
 .collapse-container {
     margin: 10px 0px 10px 0px;
 }
