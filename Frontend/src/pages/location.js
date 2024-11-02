@@ -69,7 +69,7 @@ const Location = () => {
         </div>
         <div className='collapse'>
           <Collapse title="Description" content={locationData.description} />
-          <Collapse title="Équipement" content={locationData.equipments} />
+          <Collapse title="Équipements" content={locationData.equipments} />
         </div>
       </section>
     </main>
