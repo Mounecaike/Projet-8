@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/banner'
 import Homebanner from '../Assets/Banner/paysage-home.jpeg'
 import '../Assets/Home/home.css'
-import Card from '../components/card'
+import CardList from '../components/card-list'
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
             <p className='banner-text'>Chez vous,<span className='break-responsive'></span> partout et ailleurs</p>
           </div>
       <section className='gallery'>
-        <Card />
+        <CardList />
       </section>
       </main>
   );
